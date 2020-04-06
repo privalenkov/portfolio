@@ -6,6 +6,7 @@ function Imgplate(props) {
   const {plate} = props
   return (
     <>
+    <TransitionGroup>
       <CSSTransition
         in={true}
           appear={true}
@@ -17,6 +18,7 @@ function Imgplate(props) {
           <img src= {plate.image} alt= {plate.title}/>
         </div>
       </CSSTransition>
+    </TransitionGroup>
     </>
     
   )
