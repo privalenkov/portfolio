@@ -11,7 +11,7 @@
   transition: padding-top .5s ease;
 }
 .header {
-  position: relative;
+  position: fixed;
   background-color: #fff;
   width: 100vw;
   transition: padding-top .5s ease;
@@ -87,22 +87,10 @@ header {
       -webkit-transform: scale(1, 1);
   }
 }
-
 .header {
   text-align: center;
   padding-top: 32px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* gellery */
 #container{
@@ -129,19 +117,12 @@ header {
   }
 }
 
-
-
-
-
-
-
-
-
-
 .page {
-  position: absolute;
-  left: 15px;
-  right: 15px;
+  padding: 4em;
+  column-count: 4;
+  grid-column-gap: 4em;
+  column-gap: 4em;
+  margin-top: 190px;
 }
 
 .page-enter {
@@ -150,17 +131,24 @@ transform: scale(1.1);
 }
 
 .page-enter-active {
+  padding: 4em;
+  column-count: 4;
+  grid-column-gap: 4em;
+  column-gap: 4em;
+  display: block;
 opacity: 1;
 transform: scale(1);
 transition: opacity 300ms, transform 300ms;
 }
 
 .page-exit {
+ 
 opacity: 1;
 transform: scale(1);
 }
 
 .page-exit-active {
+  
 opacity: 0;
 transform: scale(0.9);
 transition: opacity 300ms, transform 300ms;

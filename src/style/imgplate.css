@@ -1,55 +1,93 @@
-#container div {
-    margin-bottom: 4em;
-    position: relative;
-}
+/* gellery */
+
 #container img {
     border-radius: 5px;
 }
-#container div a:after {
-    content: "";
-    opacity: 0;
-    transition: opacity .2s;
-    border-radius: 5px;
-}
-#container div:hover {
+#container .imga:hover {
     transition: .2s;
-    transform: scale(1.05);
+    transform: scale(.98);
 }
-#container div {
-    transition: .2s;    
+#container .imga {
+    position: relative;
+    margin-bottom: 4em;
 }
-#container div a:hover:after {
-    display: block;    
-    width: 100%;
-    height: 100%;    
+
+#container .imga{
+    transition: .2s;
+}
+.bg-plate {
     position: absolute;
-    top: 0;      
-    left: 0;   
-    background: transparent;
-    background-color:#000000;
-    opacity: 1;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
-}
-#container div a:before {
-    content: "";
-    opacity: 0;    
-    transition: opacity .2s;
-    border-radius: 5px;
-}
-#container div a:hover:before {
-    content: "Концепт дизайн игры Moriko:\00a0 Chapter one";
+    background-color: #000;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 3vh;
     color: #fff;
-    display: inline-block;
-    margin: 3em 0 0 3vh;    
-    position: absolute;    
-    /* top: 50%;
-    left: 50%;     */
-    z-index: 100; 
+    opacity: 0;
+    transition: .2s;
+    z-index: 1;
+}
+
+/* .imga {
+    padding-top: 20px;
+} */
+
+.bg-plate:hover {
     opacity: 1;
+    transition: .2s;
+}
+.plate-container {
+    border-radius: 5px;
+}
+.title-plate {
+    padding: 3em 0 0 3vh; 
 }
 img{
     width: 100%;
+}
+  
+
+/* .fade {
+    padding: 4em;
+    column-count: 4;
+    grid-column-gap: 4em;
+    column-gap: 4em;
+    margin-top: 190px;
+} */
+.fade-appear {
+    opacity: 0;
+    transform: scale(0);
+}
+.fade-appear .fade-appear-active {
+    opacity: 1;
+    transform: scale(0);
+    transition: opacity 300ms linear;
+}  
+
+.fade-enter {
+    opacity: 0;
+    transform: scale(1.1);
+}
+.fade-enters .fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms linear;
+}
+
+
+
+  
+.fade-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+.fade-exit .fade-exit-active{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms linear;
+}
+.fade-exit-done {
+    opacity: 0;
 }
