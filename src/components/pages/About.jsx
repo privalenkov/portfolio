@@ -1,16 +1,20 @@
 import React from 'react'
+import {CSSTransition, TransitionGroup } from 'react-transition-group'
+import Photo_about from '../../images/Photo_about.svg'
+import '../../style/photo_about.css'
 
 function About() {
   return (
     <>
-      <h1>About</h1>
-      <p>
-        Donec sit amet augue at enim sollicitudin porta. Praesent finibus ex
-        velit, quis faucibus libero congue et. Quisque convallis eu nisl et
-        congue. Vivamus eget augue quis ante malesuada ullamcorper. Sed orci
-        nulla, eleifend eget dui faucibus, facilisis aliquet ante. Suspendisse
-        sollicitudin nibh lacus, ut bibendum risus elementum a.
-      </p>
+      <div id="container-about">
+        <div id="profile_img"><a href="https://vk.com/privalenkovkirill"><img src={Photo_about} alt="профиль"/></a></div>
+        <div className="profile_name">Приваленков Кирилл</div>
+        <div className="profile_text">
+          <p>Я молодой дизайнер, который&nbsp;старается разрабатывать только годный дизайн. 
+              Сделаю все бесплатно, чтобы&nbsp;обзавестись хорошим портфолио.</p>
+        </div>
+      </div>
+    
     </>
   )
 }

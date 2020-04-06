@@ -6,19 +6,17 @@ function Imgplate(props) {
   const {plate} = props
   return (
     <>
-    
-    <TransitionGroup className="plate-container">
       <CSSTransition
-        appear={true}
-        timeout={300}
-        classNames="fade"
+        in={true}
+          appear={true}
+          timeout={100}
+          classNames="fade"
       >
         <div className="imga">
           <a href=" "><div className="bg-plate"><div className="title-plate">{plate.title}</div></div></a>
           <img src= {plate.image} alt= {plate.title}/>
         </div>
       </CSSTransition>
-    </TransitionGroup>
     </>
     
   )

@@ -38,23 +38,21 @@ function Menu() {
               </nav>
           </div>
         </header>
-        <div id="container">
-            {routes.map(({ path, Component }) => (
-                <Route key={path} exact path={path}>
-                {/* {({ match }) => (
-                    <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                    >
-                    </CSSTransition>
-                )} */}
-                
-                <Component />
-                </Route>
-            ))}
-        </div>
+        {routes.map(({ path, Component }) => (
+            <Route key={path} exact path={path}>
+            {/* {({ match }) => (
+                <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+                >
+                </CSSTransition>
+            )} */}
+            
+            <Component />
+            </Route>
+        ))}
       </>
     </Router>
   );

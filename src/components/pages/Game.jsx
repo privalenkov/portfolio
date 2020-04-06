@@ -1,12 +1,14 @@
 import React from 'react'
-import {CSSTransition, TransitionGroup } from 'react-transition-group'
 import ImgplateList from '../ImgplateList'
-import Imgplates from '../fixtures'
+import Imgplates from '../img_loader_game'
 
 function Game() {
   return (
     <>
+    
+    <div id="container">
       <ImgplateList imgplates = {Imgplates} />
+    </div>
     </>
   )
 }
