@@ -25,15 +25,15 @@ function Menu() {
     <Router>
       <>
         <header>
-          <div className="header">
+          <div className="header header-close">
             <button onClick={() => hm()} className="hamburger-menu">
               <span className="menu-item"></span>
               <span className="menu-item"></span>
               <span className="menu-item"></span>
             </button>
-            <div className="hamburder-menu-container">
-              <div className="logo"><a href="https://vk.com/privalenkovkirill">Кирилл Приваленков</a></div>
-              <nav className="menu">
+            <div className="hamburder-menu-container hamburder-menu-container-close">
+              <div className="logo logo-close"><a href="https://vk.com/privalenkovkirill">Кирилл Приваленков</a></div>
+              <nav className="menu menu-close">
               <ul className="menu-main">
                 {routes.map(route => (
                   <NavLink 
