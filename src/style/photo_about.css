@@ -1,13 +1,22 @@
 /* gellery */
 #container-about{
     padding: 4em;
-    margin-top: 270px;
+    margin-top: 240px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+.about-container {
+    margin: 0 80px
+}
 .pan_com__body img{
     width: 100%;
+}
+.pan_com_v {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
 }
 #profile_img a{
     display: flex; 
@@ -28,4 +37,45 @@
     font-size: 18px;
     width: 520px;
     text-align: center;
+}
+
+
+.aboutfade-appear {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: 100ms linear;
+}
+/* .fadeimg-appear .fadeimg-appear-active {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 300ms linear;
+}  */
+
+.aboutfade-enter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 100ms linear;
+}
+/* .fadeimg-enter .fadeimg-enter-active {
+    opacity: 1;
+    transform: scale(1);
+}   */
+.aboutfade-enter-done {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 100ms linear;
+}
+/* .fadeimg-exit-active {
+    opacity: 0.01;
+    transform: scale(1);
+    transition: opacity 300ms linear;
+}  */
+
+.profile_name::selection, .profile_text p::selection {
+    background: #000;
+    color: #fff;
+}
+.profile_name::-moz-selection, .profile_text p::-moz-selection {
+    background: #000;
+    color: #fff;
 }

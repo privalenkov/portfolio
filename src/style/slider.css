@@ -1,0 +1,131 @@
+/* просмотр изображений */
+#view_img_container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+}
+.view_img_container__visible {
+    visibility: visible !important;
+}
+#view_img__bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: .9;
+    position: fixed;
+}
+    
+/* slider  */
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 30;
+}
+.slider-plate-container img {
+    pointer-events: none;
+}
+.slick-slide {
+	outline: none;
+}
+
+.sliderbody {
+    width: 45vh;
+}
+
+.slick-track{
+    display: flex;
+}
+.slick-list {
+	overflow: hidden;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+.slick-dots {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.slider_navigation {
+    width: 45vh;
+    z-index: 20;
+}
+.slick-dots li {
+    list-style: none;
+    margin: 0px .3em;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+	background-color: #c0c0c0;
+	border: none;
+}
+/* Элемент точки */
+.slick-dots li button {
+    font-size: 0;
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    outline: none;
+    background-color: #fff;
+    border-radius: 50px;
+    border: none;
+    border-width: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    flex-basis: auto;
+}
+
+
+.sliderbody img {
+    border-radius: 5px;
+	width: 100%;
+	overflow: hidden;
+}
+.sliderbody  {
+    z-index: 30;
+}
+
+
+.fadeimg-appear {
+    transform: translateY(5px);
+    transition: 100ms linear;
+}
+/* .fadeimg-appear .fadeimg-appear-active {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 300ms linear;
+}  */
+
+.fadeimg-enter {
+    transform: translateY(0);
+    transition: 100ms linear;
+}
+/* .fadeimg-enter .fadeimg-enter-active {
+    opacity: 1;
+    transform: scale(1);
+}   */
+.fadeimg-enter-done {
+    transform: translateY(0);
+    transition: 100ms linear;
+}
+.fadeimg-exit {
+    opacity:1;
+}
+/* .fadeimg-exit-active {
+    opacity: 0.01;
+    transform: scale(1);
+    transition: opacity 300ms linear;
+}  */
+.slider-plate-container {
+    z-index: 10;
+
+}

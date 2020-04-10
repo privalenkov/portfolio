@@ -1,0 +1,27 @@
+/* панель контактов справа */
+.pan_com_v {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pan_com_h {
+    width: 100vw;
+    justify-content: flex-end;
+    display: flex;
+}
+.pan_com__body {
+    margin-right: 3vh;
+}
+.pan_com__body .pan_com__item {
+    width: 20px;
+    height: 20px;
+    margin: 15px 0;
+    transition: 100ms linear;
+}
+.pan_com__body .pan_com__item:hover {
+    transform: scale(1.1);
+    transition: 100ms linear;
+    cursor: pointer;
+}

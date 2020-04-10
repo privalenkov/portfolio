@@ -6,35 +6,29 @@ import img3 from '../images/3.jpg'
 export default [
     {
         "image": img1,
-        "title": "Концепт проект морико"
+        "title": "Проект Battle of Streamers",
+        "images": [
+            {
+                "image": img1
+            }
+        ]
     },
     {
         "image": img2,
-        "title": "Концепт проект minecraft"
+        "title": "Концепт игры в minecraft стиле",
+        "images": [
+            {
+                "image": img2
+            }
+        ]
     },
     {
         "image": img3,
-        "title": "дзиайн иршы"
-    },
-    {
-        "image": img1,
-        "title": "Концепт проект морико"
-    },
-    {
-        "image": img1,
-        "title": "Концепт проект морико"
-    },
-    {
-        "image": img1,
-        "title": "Концепт проект морико"
-    },
-    {
-        "image": img2,
-        "title": "Концепт проект minecraft"
-    },
-    {
-        "image": img3,
-        "title": "дзиайн иршы"
-    },
-    
+        "title": "Концепт игры Moriko: Chapter one",
+        "images": [
+            {
+                "image": img3
+            }
+        ]
+    }
 ]
