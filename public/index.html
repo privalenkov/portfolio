@@ -35,12 +35,14 @@
     <div id="root"></div>
     <script>
       window.addEventListener('scroll', function() {
-          let winTop = window.pageYOffset;
-          if (winTop >= 80) {
-              document.getElementById('body').classList.add("sticky-header");
-          }
-          else {
-              document.getElementById('body').classList.remove("sticky-header");
+          if (window.innerWidth >= 1100) {
+            let winTop = window.pageYOffset;
+            if (winTop >= 80) {
+                document.getElementById('body').classList.add("sticky-header");
+            }
+            else {
+                document.getElementById('body').classList.remove("sticky-header");
+            }
           }
       });
     </script>

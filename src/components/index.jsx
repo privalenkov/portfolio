@@ -14,27 +14,42 @@ const routes = [
 ]
 
 function Menu() {
+  function hm() {
+    document.querySelector('.menu').classList.toggle("menu-close");
+    document.querySelector('.header').classList.toggle("header-close");
+    document.querySelector('.hamburder-menu-container').classList.toggle("hamburder-menu-container-close");
+    document.querySelector('.logo').classList.toggle("logo-close");
+    
+  }
   return (
     <Router>
       <>
         <header>
           <div className="header">
+            <button onClick={() => hm()} className="hamburger-menu">
+              <span className="menu-item"></span>
+              <span className="menu-item"></span>
+              <span className="menu-item"></span>
+            </button>
+            <div className="hamburder-menu-container">
               <div className="logo"><a href="https://vk.com/privalenkovkirill">Кирилл Приваленков</a></div>
               <nav className="menu">
-                  <ul className="menu-main">
-                    {routes.map(route => (
-                      <NavLink 
-                        key={route.path}
-                        as={NavLink}
-                        to={route.path}
-                        activeClassName="current"
-                        exact
-                      >
-                        {route.name}
-                      </NavLink >
-                    ))}
-                  </ul>
-              </nav>
+              <ul className="menu-main">
+                {routes.map(route => (
+                  <NavLink 
+                    key={route.path}
+                    to={route.path}
+                    activeClassName="current"
+                    exact
+                  >
+                    {route.name}
+                  </NavLink >
+                ))}
+              </ul>
+            </nav>
+            </div>
+            
+            
           </div>
         </header>
         {routes.map(({ path, Component }) => (
