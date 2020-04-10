@@ -134,24 +134,41 @@ header {
 .hamburger-menu{
   display: none;
 }
-
+@media(min-width: 1100px){
+  #container-about{
+    padding: 4em;
+    margin-top: 240px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #profile_img {
+    padding-right: 95px;
+  }
+  .profile_name {
+    margin-top: 50px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 27px;
+  }
+  .profile_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 520px;
+    text-align: center;
+  }
+}
 @media(max-width: 1100px){
   .menu-close {
-    display: none;
-  }
-  .header-close  {
-    display: flex;
-  }
-  .hamburder-menu-container-close {
-    width: 100%;
-    padding-right: 64px;
-  }
-  .logo-close {
-    padding-top: 38px;
+    height: 0 !important;
+    transition: 100ms linear !important;
+    overflow: hidden;
   }
   .logo {
     width: 100%;
     margin-right: 64px;
+    padding-top: 0;
     padding-bottom: 38px;
   }
   .hamburger-menu {
@@ -165,7 +182,7 @@ header {
     margin-left: 65px;
   }
   #container {
-    margin-top: 80px;
+    margin-top: 100px;
   }
   .header {
     padding: 0;
@@ -181,20 +198,21 @@ header {
   }
   .menu {
     height: 100vh;
+    display: flex;
+    transition: 100ms linear;
+    flex-direction: column;
   }
   .menu-main {
     list-style: none;
-    padding: 0;
     font-size: 18px;
-    text-align: center;
-    position: relative;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
   .menu-main a{
     justify-content: center;
     text-decoration: none;
-    display: flex;
-    padding: 61px 20px;
+    padding: 6.3vh 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -207,6 +225,30 @@ header {
   }
   .menu-main a:hover{
     border-radius: 0 !important;
+  }
+
+  #container-about{
+    margin-top: 34vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #profile_img {
+    padding-right: 10vw;
+  }
+  .profile_name {
+    margin-top: 30px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+  }
+  .profile_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 316px;
+    text-align: center;
   }
 }
 @media(max-width: 1180px){

@@ -16,9 +16,6 @@ const routes = [
 function Menu() {
   function hm() {
     document.querySelector('.menu').classList.toggle("menu-close");
-    document.querySelector('.header').classList.toggle("header-close");
-    document.querySelector('.hamburder-menu-container').classList.toggle("hamburder-menu-container-close");
-    document.querySelector('.logo').classList.toggle("logo-close");
     
   }
   return (
