@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.84b66638.chunk.css",
-    "main.js": "/react/static/js/main.1c336043.chunk.js",
-    "main.js.map": "/react/static/js/main.1c336043.chunk.js.map",
+    "main.css": "/react/static/css/main.78f165b3.chunk.css",
+    "main.js": "/react/static/js/main.ec500cad.chunk.js",
+    "main.js.map": "/react/static/js/main.ec500cad.chunk.js.map",
     "runtime-main.js": "/react/static/js/runtime-main.60163d52.js",
     "runtime-main.js.map": "/react/static/js/runtime-main.60163d52.js.map",
-    "static/js/2.49b41ecc.chunk.js": "/react/static/js/2.49b41ecc.chunk.js",
-    "static/js/2.49b41ecc.chunk.js.map": "/react/static/js/2.49b41ecc.chunk.js.map",
+    "static/js/2.5b437162.chunk.js": "/react/static/js/2.5b437162.chunk.js",
+    "static/js/2.5b437162.chunk.js.map": "/react/static/js/2.5b437162.chunk.js.map",
     "index.html": "/react/index.html",
-    "precache-manifest.fc4e50ec1528bfb0e46cfc9e25ce4091.js": "/react/precache-manifest.fc4e50ec1528bfb0e46cfc9e25ce4091.js",
+    "precache-manifest.507f8cdac983f1ddb90019d59bda72ab.js": "/react/precache-manifest.507f8cdac983f1ddb90019d59bda72ab.js",
     "service-worker.js": "/react/service-worker.js",
-    "static/css/main.84b66638.chunk.css.map": "/react/static/css/main.84b66638.chunk.css.map",
-    "static/js/2.49b41ecc.chunk.js.LICENSE.txt": "/react/static/js/2.49b41ecc.chunk.js.LICENSE.txt",
+    "static/css/main.78f165b3.chunk.css.map": "/react/static/css/main.78f165b3.chunk.css.map",
+    "static/js/2.5b437162.chunk.js.LICENSE.txt": "/react/static/js/2.5b437162.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/react/static/media/1.2ea5548a.jpg",
     "static/media/2.jpg": "/react/static/media/2.10c27603.jpg",
     "static/media/3.jpg": "/react/static/media/3.3ff7b41c.jpg",
-    "static/media/Photo_about.svg": "/react/static/media/Photo_about.8389cf96.svg"
+    "static/media/4.jpg": "/react/static/media/4.860bf235.jpg",
+    "static/media/6.jpg": "/react/static/media/6.bb47ba20.jpg",
+    "static/media/Photo_about.svg": "/react/static/media/Photo_about.8389cf96.svg",
+    "static/media/instagram.svg": "/react/static/media/instagram.62593ffa.svg",
+    "static/media/telegram.svg": "/react/static/media/telegram.f647f49d.svg",
+    "static/media/vk.svg": "/react/static/media/vk.ce6a386d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.60163d52.js",
-    "static/js/2.49b41ecc.chunk.js",
-    "static/css/main.84b66638.chunk.css",
-    "static/js/main.1c336043.chunk.js"
+    "static/js/2.5b437162.chunk.js",
+    "static/css/main.78f165b3.chunk.css",
+    "static/js/main.ec500cad.chunk.js"
   ]
 }
