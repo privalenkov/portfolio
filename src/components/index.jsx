@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
 import '../style/index.css';
 import Web from './pages/Web'
 import Illustration from './pages/Illustration'
@@ -17,34 +17,35 @@ function Menu() {
   function hm() {
     document.querySelector('.menu').classList.toggle("menu-close");
     document.querySelector('.hamburder-menu-container').classList.toggle("hamburder-menu-container-close");
-    document.querySelector('.header').classList.toggle("header-close");
-    document.querySelector('.logo').classList.toggle("logo-close");
     document.querySelector('.hamburger-menu').classList.toggle("hamburger-menu-close");
   }
   return (
     <Router>
       <>
         <header>
-          <div className="header header-close">
-            <button onClick={() => hm()} className="hamburger-menu">
-              <span className="menu-item"></span>
-              <span className="menu-item"></span>
-              <span className="menu-item"></span>
-            </button>
+          <div className="header">
+            <div className="logo-hm">
+              <button onClick={() => hm()} className="hamburger-menu">
+                <span className="menu-item"></span>
+                <span className="menu-item"></span>
+                <span className="menu-item"></span>
+              </button>
+              <div className="logo"><a href="https://vk.com/privalenkovkirill">Кирилл Приваленков</a></div>
+            </div>
             <div className="hamburder-menu-container hamburder-menu-container-close">
-              <div className="logo logo-close"><a href="https://vk.com/privalenkovkirill">Кирилл Приваленков</a></div>
               <nav className="menu menu-close">
               <ul className="menu-main">
                 {routes.map(route => (
                   <NavLink 
-                    onClick={() => hm()}
-                    key={route.path}
-                    to={route.path}
-                    activeClassName="current"
-                    exact
-                  >
+                  to={route.path}
+                  key={route.path} 
+                  onClick={() => hm()}
+                  activeClassName="current"
+                  exact
+                >
+                  <span>
                     {route.name}
-                  </NavLink >
+                  </span></NavLink>
                 ))}
               </ul>
             </nav>

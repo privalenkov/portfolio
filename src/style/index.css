@@ -32,6 +32,7 @@
   text-align: center;
   padding-top: 30px;
   text-transform: uppercase;
+  
 }
 header {
   display: flex;
@@ -173,28 +174,34 @@ header {
   .hamburger-menu-close .menu-item {
     margin: 0 0 5px;
   }
+  .hamburger-menu .menu-item {
+    margin: 0 0 5px;
+    transition: 20ms linear;
+  }
   .hamburger-menu-close .menu-item:first-child {
     transform: rotate(45deg);
     transform-origin: 9px;
-    transition: 100ms linear;
+    transition: 20ms linear;
   }
   .hamburger-menu-close .menu-item:nth-child(2) {
     display: none;
   }
   .hamburger-menu-close .menu-item:nth-child(3) {
     transform: rotate(-45deg);
-    transition: 100ms linear;
+    transition: 20ms linear;
     transform-origin: 8px;
   }
+  
   .menu-close {
     height: 0 !important;
-    transition: 100ms linear !important;
+    
     overflow: hidden;
   }
   .logo {
     width: 100%;
-    margin-right: 64px;
-    padding-bottom: 38px;
+    margin-right: 16vw;
+    padding-top: 38px;
+    text-align: end;
   }
   .hamburger-menu {
     display: block;
@@ -222,34 +229,56 @@ header {
     border-radius: 5px;
   }
   .menu {
-    height: 100vh;
-    display: flex;
     transition: 100ms linear;
-    flex-direction: column;
+    display: flex;
+    width: 100vw;
+    opacity: 1;
+    height: 100vh;
+    justify-content: center;
+  }
+  .logo-hm {
+    display: flex;
+    background-color: #fff;
+    width: 100vw;
+    transition: padding-top .5s ease;
+    z-index: 10;
+    position: fixed;
   }
   .menu-main {
     list-style: none;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+    padding-top: 25%;
+    margin: 0;
   }
-  .menu-main a{
+  .menu-main a {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    height: 25%;
+    width: 100vw;
     justify-content: center;
+  }
+  .menu-main a {
     text-decoration: none;
-    padding: 6.3vh 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    padding: 0;
+    margin: 0;
     color: #000000;
     transition: .1s;
-    margin: 0;
   }
-  .menu-main .current{
-    border-radius: 0 !important;
+  .menu-main a:hover {
+    border-radius: 0;
+    background: #000000;
+    animation: spring 100ms ease-out;
   }
-  .menu-main a:hover{
-    border-radius: 0 !important;
+  .menu-main .current {
+    border-radius: 0;
+    background: #000000;
+    animation: spring 100ms ease-out;
+  }
+  .menu-main a:hover span {
+    color: #ffffff !important;
   }
 
   #container-about{
@@ -277,12 +306,12 @@ header {
   }
 }
 @media(max-width: 1180px){
-  .menu-main a{
+  .menu-main li a{
     font-size: 18px;
   }
 }
 @media(max-width: 1132px){
-  .menu-main a{
+  .menu-main li a{
     font-size: 16px;
   }
 }
