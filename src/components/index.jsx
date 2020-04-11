@@ -16,7 +16,10 @@ const routes = [
 function Menu() {
   function hm() {
     document.querySelector('.menu').classList.toggle("menu-close");
-    
+    document.querySelector('.hamburder-menu-container').classList.toggle("hamburder-menu-container-close");
+    document.querySelector('.header').classList.toggle("header-close");
+    document.querySelector('.logo').classList.toggle("logo-close");
+    document.querySelector('.hamburger-menu').classList.toggle("hamburger-menu-close");
   }
   return (
     <Router>
@@ -34,6 +37,7 @@ function Menu() {
               <ul className="menu-main">
                 {routes.map(route => (
                   <NavLink 
+                    onClick={() => hm()}
                     key={route.path}
                     to={route.path}
                     activeClassName="current"

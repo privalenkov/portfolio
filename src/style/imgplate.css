@@ -39,17 +39,6 @@
     transition: .2s;
 }
 
-@media(max-width: 1100px){
-    .bg-plate {
-        opacity: 0.9;
-    }
-    #container .imga:hover {
-        transform: scale(1);
-    }
-    .bg-plate:hover {
-        opacity: 0.9;
-    }
-}
 .plate-container {
     border-radius: 5px;
     -ms-user-select: none;
