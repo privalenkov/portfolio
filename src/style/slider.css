@@ -33,7 +33,7 @@
 }
 
 .sliderbody {
-    width: 45vh;
+    width: 65vw;
 }
 
 .slick-track{
@@ -65,7 +65,7 @@
 }
 /* Активная точка */
 .slick-dots li.slick-active button{
-	background-color: #c0c0c0;
+	background-color: #2e2e2e;
 	border: none;
 }
 /* Элемент точки */

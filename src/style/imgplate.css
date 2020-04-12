@@ -12,7 +12,10 @@
     margin-bottom: 4em;
     display: flex;
 }
-
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
 #container .imga{
     transition: .2s;
 }

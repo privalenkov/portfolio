@@ -28,6 +28,7 @@ function Slider({ SliderItemLoader }) {
                         slidesToShow={1}
                         slidesToScroll={1}
                         dots={true}
+                        adaptiveHeight={true}
                         autoplay={true}
                         infinite={true}
                         speed={500}

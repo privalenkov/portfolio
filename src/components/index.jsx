@@ -8,9 +8,9 @@ import About from './pages/About'
 
 const routes = [
   { path: '/portfolio', name: 'WEB', Component: Web },
-  { path: '/Illustration', name: 'ILLUSTRATION', Component: Illustration },
-  { path: '/Game', name: 'GAME', Component: Game },
-  { path: '/About', name: 'ABOUT', Component: About },
+  { path: '/portfolio/Illustration', name: 'ILLUSTRATION', Component: Illustration },
+  { path: '/portfolio/Game', name: 'GAME', Component: Game },
+  { path: '/portfolio/About', name: 'ABOUT', Component: About },
 ]
 
 function Menu() {
