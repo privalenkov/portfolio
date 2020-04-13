@@ -113,6 +113,12 @@ header {
   column-gap: 4em;
   margin-top: 190px;
 }
+@media (max-width: 600px) and (orientation:landscape) {
+  #container{
+    column-count: 3;
+  }
+}
+
 @media(max-width: 1366px){
   #container{
       column-count: 3;
@@ -125,7 +131,7 @@ header {
   }
 }
 
-@media(max-width: 600px){
+@media (max-width: 600px)  and (orientation:portrait){
   #container{
       column-count: 1;
   }
@@ -199,7 +205,7 @@ header {
   }
   .logo {
     width: 100%;
-    margin-right: 16vw;
+    margin-right: 62px;
     padding-top: 38px;
     text-align: end;
   }
