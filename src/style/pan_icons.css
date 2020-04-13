@@ -11,9 +11,6 @@
     justify-content: flex-end;
     display: flex;
 }
-.pan_com__body {
-    margin-right: 3vh;
-}
 .pan_com__body .pan_com__item {
     width: 20px;
     height: 20px;

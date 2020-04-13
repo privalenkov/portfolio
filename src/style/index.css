@@ -113,27 +113,87 @@ header {
   column-gap: 4em;
   margin-top: 190px;
 }
-@media (max-width: 600px) and (orientation:landscape) {
+
+@media (max-width: 1100px) and (orientation:portrait) {
+  .menu-main {
+    padding-top: 25%;
+  }
+  #profile_img {
+    padding-right: 10vw;
+  }
+}
+@media (max-width: 1100px) and (orientation:landscape) {
+  .menu-main {
+    padding-top: 15%;
+  }
+  #profile_img {
+    padding-right: 27vw;
+    padding-left: 20vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  #profile_img {
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 900px) and (orientation:landscape) {
   #container{
     column-count: 3;
+    grid-column-gap: 30px;
+    column-gap: 30px;
+  }
+  #container .imga {
+    margin-bottom: 30px;
+  }
+  .pan_com__body {
+    margin-right: 25px;
   }
 }
+@media (min-width: 1366px) and (orientation:landscape){
+  #container .imga {
+    margin-bottom: 60px;
+  }
+  .pan_com__body {
+    margin-right: 35px;
+  }
+  
+}
 
-@media(max-width: 1366px){
+@media (max-width: 1366px) and (min-width: 900px) {
   #container{
-      column-count: 3;
+      column-count: 3; 
+  }
+  #container .imga {
+    margin-bottom: 60px;
+  }
+  .pan_com__body {
+    margin-right: 35px;
   }
 }
 
-@media(max-width: 900px){
+@media (max-width: 900px) and (min-width: 600px) and (orientation:portrait){
   #container{
       column-count: 2;
   }
+  #container .imga {
+    margin-bottom: 60px;
+  }
+  .pan_com__body {
+    margin-right: 35px;
+  } 
 }
 
 @media (max-width: 600px)  and (orientation:portrait){
   #container{
       column-count: 1;
+  }
+  #container .imga {
+    margin-bottom: 60px;
+  }
+  .pan_com__body {
+    margin-right: 25px;
   }
 }
 
@@ -149,9 +209,7 @@ header {
     align-items: center;
     flex-direction: column;
   }
-  #profile_img {
-    padding-right: 95px;
-  }
+  
   .profile_name {
     margin-top: 50px;
     font-family: 'PT Serif', serif;
@@ -252,7 +310,6 @@ header {
   }
   .menu-main {
     list-style: none;
-    padding-top: 25%;
     margin: 0;
   }
   .menu-main a {
@@ -292,9 +349,6 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  #profile_img {
-    padding-right: 10vw;
   }
   .profile_name {
     margin-top: 30px;
