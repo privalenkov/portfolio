@@ -30,7 +30,7 @@ function Menu() {
                 <span className="menu-item"></span>
                 <span className="menu-item"></span>
               </button>
-              <div className="logo"><a href="https://vk.com/privalenkovkirill">Кирилл Приваленков</a></div>
+              <div className="logo"><a href="https://vk.com/privalenkovkirill" rel = "noopener noreferrer" target="_blank">Кирилл Приваленков</a></div>
             </div>
             <div className="hamburder-menu-container hamburder-menu-container-close">
               <nav className="menu menu-close">
