@@ -4,7 +4,7 @@ import Imgplate from './Imgplate'
 
 function ImgplateList({ imgplates }) {
     let timeout = 0;
-    const plateElements = imgplates.map((plate, index) =>
+    const plateElements = imgplates.map((plate, index) => 
         <TransitionGroup className="plate-container">
             <CSSTransition
                 in={true}
