@@ -7,10 +7,10 @@ import Game from './pages/Game'
 import About from './pages/About'
 
 const routes = [
-  { path: '/portfolio', name: 'WEB', Component: Web },
+  { path: '/', name: 'WEB', Component: Web },
   { path: '/Illustration', name: 'ILLUSTRATION', Component: Illustration },
-  { path: '/Game', name: 'GAME', Component: Game },
-  { path: '/About', name: 'ABOUT', Component: About },
+  { path: '/game', name: 'GAME', Component: Game },
+  { path: '/about', name: 'ABOUT', Component: About },
 ]
 
 function Menu() {
